@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Urbanist Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome Icon -->
+    <script
+      src="https://kit.fontawesome.com/98e8a8d1ca.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-[#F3F3F3] overflow-x-hidden">
+    <header class="max-w-[1280px] mx-auto">
+      <nav
+        class="font-[inter] flex flex-row items-center justify-between py-5 md:py-9 px-4 md:px-0"
+      >
+        <div class="flex items-center">
+          <h3 class="text-[32px] font-bold text-[#0F0E0E]">
+            <span class="text-[#FC6320]">e</span>Com
+          </h3>
+          <img src="./assets/logo.png" alt="" class="w-9 h-9" />
+        </div>
+        <ul class="hidden md:flex items-center space-x-10">
+          <li
+            class="bg-[#FC6320] bg-opacity-15 text-[#FC6320] font-bold px-4 py-2 rounded-lg"
+          >
+            Home
+          </li>
+          <li class="font-medium text-[#0F0E0E99] text-opacity-60">Shop</li>
+          <li class="font-medium text-[#0F0E0E99] text-opacity-60">
+            App Products
+          </li>
+          <li class="font-medium text-[#0F0E0E99] text-opacity-60">Contact</li>
+        </ul>
+        <div class="flex space-x-6">
+          <img src="./assets/fb.png" alt="" />
+          <img src="./assets/instagram.png" alt="" />
+          <img src="./assets/x.png" alt="" />
+        </div>
+      </nav>
+      <!-- Banner -->
+      <div
+        class="bg-[url('./assets/poster.jpeg')] h-[600px] bg-cover mx-3 md:mx-0 rounded-3xl relative flex items-center justify-center font-[urbanist]"
+      >
+        <div
+          class="absolute inset-0 from-black opacity-70 bg-gradient-to-t rounded-3xl"
+        ></div>
+        <div class="text-white text-center space-y-6 z-10">
+          <h1 class="font-extrabold text-4xl md:text-[56px] md:leading-[72px]">
+            Don't Miss Out on These Unbeatable <br />
+            Black Friday Deals!
+          </h1>
+          <p class="font-medium text-lg leading-[30px]">
+            Save big this Black Friday with unbeatable deals on tech, home
+            essentials, <br />
+            fashion, and more! Limited stock.
+          </p>
+          <div class="text-xl font-bold">
+            <button class="px-7 py-3 bg-[#FC6320] rounded-lg">
+              Explore Deal
+            </button>
+            <button class="px-7 py-3 border rounded-lg">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <!-- Brand Logo -->
+      <div
+        class="mt-24 flex flex-col md:flex-row gap-8 items-center justify-between filter grayscale"
+      >
+        <img src="./assets/canon.png" alt="" />
+        <img src="./assets/unicef.png" alt="" />
+        <img src="./assets/mastercard.png" alt="" />
+        <img src="./assets/suzuki.png" alt="" />
+        <img src="./assets/unicef.png" alt="" />
+        <img src="./assets/supreme.png" alt="" />
+      </div>
+    </header>
+    <main
+      class="max-w-[1280px] mx-auto font-[urbanist] px-4 md:px-0 pb-[100px]"
+    >
+      <!-- Products Section -->
+      <section class="mt-24">
+        <h1 class="text-[40px] font-extrabold text-center text-[#0F0E0E]">
+          Exclusive Products
+        </h1>
+        <p
+          class="mt-4 text-lg font-medium leading-[30px] text-[#0F0E0E] text-opacity-70 text-center"
+        >
+          Save big this Black Friday with unbeatable deals on tech, home
+          essentials, <br />
+          fashion, and more! Limited stock.
+        </p>
+        <!-- Cards -->
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Card: 01 -->
+          <div
+            class="w-full md:w-[411px] rounded-2xl bg-white py-6 px-6 md:px-0"
+          >
+            <div
+              class="w-full md:w-[363px] h-[200px] rounded-xl bg-[#0F0E0E33] bg-opacity-20 mx-auto"
+            ></div>
+            <div class="mt-4 px-0 md:px-6">
+              <h1 class="text-xl font-extrabold text-[#0F0E0E]">
+                Exclusive Products
+              </h1>
+              <p class="font-medium leading-[26px] text-[#0F0E0EB2]">
+                Save big this Black Friday with unbeatable deals on tech. Save
+                big this Black Friday with unbeatable deals on tech.
+              </p>
+              <div class="flex items-center justify-between mt-4">
+                <p class="text-[#0F0E0E] font-bold">Price: 1520 Taka</p>
+                <div
+                  class="flex items-center w-[98px] h-9 px-4 py-2 bg-[#0F0E0E0D] border border-[#0F0E0E0D] rounded-lg space-x-2"
+                >
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_10_193)">
+                        <path
+                          d="M4.16666 10H15.8333"
+                          stroke="#0F0E0E"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_10_193">
+                          <rect width="20" height="20" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                  <p class="font-bold text-[#0F0E0E]">2</p>
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_10_179)">
+                        <path
+                          d="M10 4.16666V15.8333"
+                          stroke="#0F0E0E"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.16666 10H15.8333"
+                          stroke="#0F0E0E"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_10_179">
+                          <rect width="20" height="20" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <button
+                class="mt-4 text-[#0F0E0E] font-semibold bg-[#0F0E0E0D] border border-[#0F0E0E0D] rounded-lg w-full py-[14px]"
+              >
+                Add to cart
+              </button>
+              <button
+                class="font-bold text-[#FC6320] bg-[#FC63201A] border border-[#FC632033] rounded-lg w-full py-[14px] mt-3"
+              >
+                Buy Now
+              </button>
+            </div>
+          </div>
+          <!-- Card: 02 -->
+          <div
+            class="w-full md:w-[411px] rounded-2xl bg-white py-6 px-6 md:px-0"
+          >
+            <div
+              class="w-full md:w-[363px] h-[200px] rounded-xl bg-[#0F0E0E33] bg-opacity-20 mx-auto"
+            ></div>
+            <div class="mt-4 px-0 md:px-6">
+              <h1 class="text-xl font-extrabold text-[#0F0E0E]">
+                Exclusive Products
+              </h1>
+              <p class="font-medium leading-[26px] text-[#0F0E0EB2]">
+                Save big this Black Friday with unbeatable deals on tech. Save
+                big this Black Friday with unbeatable deals on tech.
+              </p>
+              <div class="flex items-center justify-between mt-4">
+                <p class="text-[#0F0E0E] font-bold">Price: 1520 Taka</p>
+                <div
+                  class="flex items-center w-[98px] h-9 px-4 py-2 bg-[#0F0E0E0D] border border-[#0F0E0E0D] rounded-lg space-x-2"
+                >
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_10_193)">
+                        <path
+                          d="M4.16666 10H15.8333"
+                          stroke="#0F0E0E"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_10_193">
+                          <rect width="20" height="20" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                  <p class="font-bold text-[#0F0E0E]">2</p>
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_10_179)">
+                        <path
+                          d="M10 4.16666V15.8333"
+                          stroke="#0F0E0E"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.16666 10H15.8333"
+                          stroke="#0F0E0E"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_10_179">
+                          <rect width="20" height="20" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <button
+                class="mt-4 text-[#0F0E0E] font-semibold bg-[#0F0E0E0D] border border-[#0F0E0E0D] rounded-lg w-full py-[14px]"
+              >
+                Add to cart
+              </button>
+              <button
+                class="font-bold text-[#FC6320] bg-[#FC63201A] border border-[#FC632033] rounded-lg w-full py-[14px] mt-3"
+              >
+                Buy Now
+              </button>
+            </div>
+          </div>
+          <!-- Card: 03 -->
+          <div
+            class="w-full md:w-[411px] rounded-2xl bg-white py-6 px-6 md:px-0"
+          >
+            <div
+              class="w-full md:w-[363px] h-[200px] rounded-xl bg-[#0F0E0E33] bg-opacity-20 mx-auto"
+            ></div>
+            <div class="mt-4 px-0 md:px-6">
+              <h1 class="text-xl font-extrabold text-[#0F0E0E]">
+                Exclusive Products
+              </h1>
+              <p class="font-medium leading-[26px] text-[#0F0E0EB2]">
+                Save big this Black Friday with unbeatable deals on tech. Save
+                big this Black Friday with unbeatable deals on tech.
+              </p>
+              <div class="flex items-center justify-between mt-4">
+                <p class="text-[#0F0E0E] font-bold">Price: 1520 Taka</p>
+                <div
+                  class="flex items-center w-[98px] h-9 px-4 py-2 bg-[#0F0E0E0D] border border-[#0F0E0E0D] rounded-lg space-x-2"
+                >
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_10_193)">
+                        <path
+                          d="M4.16666 10H15.8333"
+                          stroke="#0F0E0E"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_10_193">
+                          <rect width="20" height="20" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                  <p class="font-bold text-[#0F0E0E]">2</p>
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_10_179)">
+                        <path
+                          d="M10 4.16666V15.8333"
+                          stroke="#0F0E0E"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.16666 10H15.8333"
+                          stroke="#0F0E0E"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_10_179">
+                          <rect width="20" height="20" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <button
+                class="mt-4 text-[#0F0E0E] font-semibold bg-[#0F0E0E0D] border border-[#0F0E0E0D] rounded-lg w-full py-[14px]"
+              >
+                Add to cart
+              </button>
+              <button
+                class="font-bold text-[#FC6320] bg-[#FC63201A] border border-[#FC632033] rounded-lg w-full py-[14px] mt-3"
+              >
+                Buy Now
+              </button>
+            </div>
+          </div>
+          <!-- Card: 04 -->
+          <div
+            class="w-full md:w-[411px] rounded-2xl bg-white py-6 px-6 md:px-0"
+          >
+            <div
+              class="w-full md:w-[363px] h-[200px] rounded-xl bg-[#0F0E0E33] bg-opacity-20 mx-auto"
+            ></div>
+            <div class="mt-4 px-0 md:px-6">
+              <h1 class="text-xl font-extrabold text-[#0F0E0E]">
+                Exclusive Products
+              </h1>
+              <p class="font-medium leading-[26px] text-[#0F0E0EB2]">
+                Save big this Black Friday with unbeatable deals on tech. Save
+                big this Black Friday with unbeatable deals on tech.
+              </p>
+              <div class="flex items-center justify-between mt-4">
+                <p class="text-[#0F0E0E] font-bold">Price: 1520 Taka</p>
+                <div
+                  class="flex items-center w-[98px] h-9 px-4 py-2 bg-[#0F0E0E0D] border border-[#0F0E0E0D] rounded-lg space-x-2"
+                >
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_10_193)">
+                        <path
+                          d="M4.16666 10H15.8333"
+                          stroke="#0F0E0E"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_10_193">
+                          <rect width="20" height="20" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                  <p class="font-bold text-[#0F0E0E]">2</p>
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_10_179)">
+                        <path
+                          d="M10 4.16666V15.8333"
+                          stroke="#0F0E0E"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.16666 10H15.8333"
+                          stroke="#0F0E0E"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_10_179">
+                          <rect width="20" height="20" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <button
+                class="mt-4 text-[#0F0E0E] font-semibold bg-[#0F0E0E0D] border border-[#0F0E0E0D] rounded-lg w-full py-[14px]"
+              >
+                Add to cart
+              </button>
+              <button
+                class="font-bold text-[#FC6320] bg-[#FC63201A] border border-[#FC632033] rounded-lg w-full py-[14px] mt-3"
+              >
+                Buy Now
+              </button>
+            </div>
+          </div>
+          <!-- Card: 05 -->
+          <div
+            class="w-full md:w-[411px] rounded-2xl bg-white py-6 px-6 md:px-0"
+          >
+            <div
+              class="w-full md:w-[363px] h-[200px] rounded-xl bg-[#0F0E0E33] bg-opacity-20 mx-auto"
+            ></div>
+            <div class="mt-4 px-0 md:px-6">
+              <h1 class="text-xl font-extrabold text-[#0F0E0E]">
+                Exclusive Products
+              </h1>
+              <p class="font-medium leading-[26px] text-[#0F0E0EB2]">
+                Save big this Black Friday with unbeatable deals on tech. Save
+                big this Black Friday with unbeatable deals on tech.
+              </p>
+              <div class="flex items-center justify-between mt-4">
+                <p class="text-[#0F0E0E] font-bold">Price: 1520 Taka</p>
+                <div
+                  class="flex items-center w-[98px] h-9 px-4 py-2 bg-[#0F0E0E0D] border border-[#0F0E0E0D] rounded-lg space-x-2"
+                >
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_10_193)">
+                        <path
+                          d="M4.16666 10H15.8333"
+                          stroke="#0F0E0E"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_10_193">
+                          <rect width="20" height="20" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                  <p class="font-bold text-[#0F0E0E]">2</p>
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_10_179)">
+                        <path
+                          d="M10 4.16666V15.8333"
+                          stroke="#0F0E0E"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.16666 10H15.8333"
+                          stroke="#0F0E0E"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_10_179">
+                          <rect width="20" height="20" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <button
+                class="mt-4 text-[#0F0E0E] font-semibold bg-[#0F0E0E0D] border border-[#0F0E0E0D] rounded-lg w-full py-[14px]"
+              >
+                Add to cart
+              </button>
+              <button
+                class="font-bold text-[#FC6320] bg-[#FC63201A] border border-[#FC632033] rounded-lg w-full py-[14px] mt-3"
+              >
+                Buy Now
+              </button>
+            </div>
+          </div>
+          <!-- Card: 06 -->
+          <div
+            class="w-full md:w-[411px] rounded-2xl bg-white py-6 px-6 md:px-0"
+          >
+            <div
+              class="w-full md:w-[363px] h-[200px] rounded-xl bg-[#0F0E0E33] bg-opacity-20 mx-auto"
+            ></div>
+            <div class="mt-4 px-0 md:px-6">
+              <h1 class="text-xl font-extrabold text-[#0F0E0E]">
+                Exclusive Products
+              </h1>
+              <p class="font-medium leading-[26px] text-[#0F0E0EB2]">
+                Save big this Black Friday with unbeatable deals on tech. Save
+                big this Black Friday with unbeatable deals on tech.
+              </p>
+              <div class="flex items-center justify-between mt-4">
+                <p class="text-[#0F0E0E] font-bold">Price: 1520 Taka</p>
+                <div
+                  class="flex items-center w-[98px] h-9 px-4 py-2 bg-[#0F0E0E0D] border border-[#0F0E0E0D] rounded-lg space-x-2"
+                >
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_10_193)">
+                        <path
+                          d="M4.16666 10H15.8333"
+                          stroke="#0F0E0E"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_10_193">
+                          <rect width="20" height="20" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                  <p class="font-bold text-[#0F0E0E]">2</p>
+                  <button>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                    >
+                      <g clip-path="url(#clip0_10_179)">
+                        <path
+                          d="M10 4.16666V15.8333"
+                          stroke="#0F0E0E"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M4.16666 10H15.8333"
+                          stroke="#0F0E0E"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_10_179">
+                          <rect width="20" height="20" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <button
+                class="mt-4 text-[#0F0E0E] font-semibold bg-[#0F0E0E0D] border border-[#0F0E0E0D] rounded-lg w-full py-[14px]"
+              >
+                Add to cart
+              </button>
+              <button
+                class="font-bold text-[#FC6320] bg-[#FC63201A] border border-[#FC632033] rounded-lg w-full py-[14px] mt-3"
+              >
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <button
+            class="mt-12 bg-[#FC6320] text-xl font-bold text-white px-7 py-[14px] rounded-xl"
+          >
+            View All Products
+          </button>
+        </div>
+      </section>
+      <!-- Recap Section -->
+      <section
+        class="mt-24 flex flex-col md:flex-row items-center justify-evenly gap-6 text-[#0F0E0E]"
+      >
+        <!-- Product Recap -->
+        <div class="flex flex-col items-center spy-3">
+          <img src="./assets/box.png" alt="" />
+          <h3 class="text-5xl font-extrabold leading-[72px]">1500+</h3>
+          <p class="text-xl font-semibold">Products</p>
+        </div>
+        <!-- Sells Recap -->
+        <div class="flex flex-col items-center spy-3">
+          <img src="./assets/cart.png" alt="" />
+          <h3 class="text-5xl font-extrabold leading-[72px]">15500+</h3>
+          <p class="text-xl font-semibold">Sells</p>
+        </div>
+        <!-- Customers Recap -->
+        <div class="flex flex-col items-center spy-3">
+          <img src="./assets/members.png" alt="" />
+          <h3 class="text-5xl font-extrabold leading-[72px]">5500+</h3>
+          <p class="text-xl font-semibold">Happy Customers</p>
+        </div>
+        <!-- Team Member Recap -->
+        <div class="flex flex-col items-center spy-3">
+          <img src="./assets/group.png" alt="" />
+          <h3 class="text-5xl font-extrabold leading-[72px]">1500+</h3>
+          <p class="text-xl font-semibold">Team Member</p>
+        </div>
+      </section>
+      <!-- Form Section -->
+      <section class="mt-24">
+        <h1 class="text-5xl font-extrabold text-center">Create account</h1>
+        <p
+          class="text-lg font-medium text-center text-[#0F0E0EB2] mt-4 md:w-[638px] mx-auto"
+        >
+          Save big this Black Friday with unbeatable deals on tech, home
+          essentials, fashion, and more! Limited stock.
+        </p>
+        <div
+          class="flex flex-col md:flex-row justify-between items-center p-6 md:p-12 mt-8 bg-white rounded-2xl border border-[#0F0E0E1A]"
+        >
+          <div>
+            <img src="./assets/form.png" alt="" />
+          </div>
+          <form class="w-full md:w-[628px]">
+            <div class="flex flex-col">
+              <label for="name" class="text-[#0F0E0E] text-lg font-semibold"
+                >Name</label
+              >
+              <div class="flex flex-col md:flex-row gap-4">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="First Name"
+                  class="placeholder:text-[text-[#0F0E0E66]] font-medium border border-[#0F0E0E1A] rounded-xl p-4 mt-3 w-full md:-w-[306px]"
+                />
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Last Name"
+                  class="placeholder:text-[text-[#0F0E0E66]] font-medium border border-[#0F0E0E1A] rounded-xl p-4 mt-3w-full md:-w-[306px]"
+                />
+              </div>
+            </div>
+            <div class="flex flex-col mt-4">
+              <label for="email" class="text-[#0F0E0E] text-lg font-semibold"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Write your email"
+                class="placeholder:text-[text-[#0F0E0E66]] font-medium border border-[#0F0E0E1A] rounded-xl p-4 mt-3"
+              />
+            </div>
+            <div class="flex flex-col mt-4">
+              <label for="password" class="text-[#0F0E0E] text-lg font-semibold"
+                >Password</label
+              >
+              <input
+                type="password"
+                id="password"
+                name="password"
+                required
+                placeholder="Write your password"
+                class="placeholder:text-[text-[#0F0E0E66]] font-medium border border-[#0F0E0E1A] rounded-xl p-4 mt-3"
+              />
+            </div>
+            <div class="flex flex-col mt-4">
+              <label for="age" class="text-[#0F0E0E] text-lg font-semibold"
+                >Age</label
+              >
+              <input
+                type="number"
+                id="age"
+                name="age"
+                required
+                placeholder="Write your age"
+                class="placeholder:text-[text-[#0F0E0E66]] font-medium border border-[#0F0E0E1A] rounded-xl p-4 mt-3"
+              />
+            </div>
+            <div class="flex flex-col md:flex-row gap-3 md:gap-6">
+              <div class="flex flex-col mt-4 w-full md:-w-[306px]">
+                <label for="gender" class="text-[#0F0E0E] text-lg font-semibold"
+                  >Gender</label
+                >
+                <select
+                  name="gender"
+                  id="gender"
+                  class="font-medium border border-[#0F0E0E1A] rounded-xl p-4 mt-3"
+                >
+                  <option value="">Select your gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+              <div class="flex flex-col mt-4 w-full md:-w-[306px]">
+                <label
+                  for="country"
+                  class="text-[#0F0E0E] text-lg font-semibold"
+                  >Country</label
+                >
+                <select
+                  name="country"
+                  id="country"
+                  class="font-medium border border-[#0F0E0E1A] rounded-xl p-4 mt-3"
+                >
+                  <option value="">Select Your Country</option>
+                  <option value="BanglaDesh">BanglaDesh</option>
+                  <option value="USA">USA</option>
+                </select>
+              </div>
+            </div>
+            <button
+              class="w-full text-xl font-bold text-white bg-[#FC6320] rounded-xl border border-[#0F0E0E1A] py-4 mt-4"
+            >
+              Create Account
+            </button>
+          </form>
+        </div>
+      </section>
+      <!-- Review -->
+      <section class="mt-24">
+        <div class="flex flex-col md:flex-row items-end justify-between">
+          <div>
+            <h1 class="font-extrabold text-3xl md:text-[40px]">
+              What our Customer Says
+            </h1>
+            <p
+              class="w-full md:w-[628px] text-lg font-medium text-[#0F0E0EB2] leading-[30px] mt-4"
+            >
+              Save big this Black Friday with unbeatable deals on tech, home
+              essentials, fashion, and more! Limited stock.
+            </p>
+          </div>
+          <div class="flex space-x-4">
+            <button
+              class="w-12 h-12 rounded-full border border-[#0F0E0E1A] bg-white"
+            >
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button
+              class="w-12 h-12 rounded-full border border-[#0F0E0E1A] bg-black"
+            >
+              <i class="fa-solid fa-arrow-right text-white"></i>
+            </button>
+          </div>
+        </div>
+        <!-- All Review -->
+        <div class="mt-8 flex flex-col md:flex-row gap-6">
+          <!-- 1st Review -->
+          <div
+            class="w-full md:w-[411px] h-[268px] flex-shrink-0 rounded-2xl bg-white p-6 relative"
+          >
+            <div class="flex space-x-4">
+              <div class="bg-[#0F0E0E0D] w-[52px] h-[52px] rounded-full"></div>
+              <div>
+                <h6 class="text-xl font-extrabold text-[#0F0E0E]">
+                  Awlad Hossain
+                </h6>
+                <p class="text-[#0F0E0EB2] leading-[26px] font-medium">
+                  10/10/2024
+                </p>
+              </div>
+            </div>
+            <p class="text-[#0F0E0EB2] leading-[26px] font-medium mt-4">
+              Save big this Black Friday with unbeatable deals on tech. Save big
+              this Black Friday with unbeatable deals on tech. Save big this
+              Black Friday with unbeatable deals on tech.
+            </p>
+            <div class="flex space-x-4 mt-4 absolute bottom-4">
+              <div class="flex spx-2 text-[#FFC107]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h5 class="text-xl font-bold text-[#0F0E0EE5] leading-[26px]">
+                (5.0)
+              </h5>
+            </div>
+          </div>
+          <!-- 2nd Review -->
+          <div
+            class="w-full md:w-[411px] h-[268px] flex-shrink-0 rounded-2xl bg-white p-6 relative"
+          >
+            <div class="flex space-x-4">
+              <div class="bg-[#0F0E0E0D] w-[52px] h-[52px] rounded-full"></div>
+              <div>
+                <h6 class="text-xl font-extrabold text-[#0F0E0E]">
+                  Rakib Hasan
+                </h6>
+                <p class="text-[#0F0E0EB2] leading-[26px] font-medium">
+                  11/11/2024
+                </p>
+              </div>
+            </div>
+            <p class="text-[#0F0E0EB2] leading-[26px] font-medium mt-4">
+              Explore the latest fashion trends at discounted prices.
+            </p>
+            <div class="flex space-x-4 mt-4 absolute bottom-4">
+              <div class="flex spx-2 text-[#FFC107]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h5 class="text-xl font-bold text-[#0F0E0EE5] leading-[26px]">
+                (4.8)
+              </h5>
+            </div>
+          </div>
+          <!-- 3rd Review -->
+          <div
+            class="w-full md:w-[411px] h-[268px] flex-shrink-0 rounded-2xl bg-white p-6 relative"
+          >
+            <div class="flex space-x-4">
+              <div class="bg-[#0F0E0E0D] w-[52px] h-[52px] rounded-full"></div>
+              <div>
+                <h6 class="text-xl font-extrabold text-[#0F0E0E]">
+                  Farhana Akter
+                </h6>
+                <p class="text-[#0F0E0EB2] leading-[26px] font-medium">
+                  12/12/2024
+                </p>
+              </div>
+            </div>
+            <p class="text-[#0F0E0EB2] leading-[26px] font-medium mt-4">
+              Discover amazing home decor items for your space.
+            </p>
+            <div class="flex space-x-4 mt-4 absolute bottom-4">
+              <div class="flex spx-2 text-[#FFC107]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h5 class="text-xl font-bold text-[#0F0E0EE5] leading-[26px]">
+                (4.8)
+              </h5>
+            </div>
+          </div>
+          <!-- 4th Review -->
+          <div
+            class="w-full md:w-[411px] h-[268px] flex-shrink-0 rounded-2xl bg-white p-6 relative"
+          >
+            <div class="flex space-x-4">
+              <div class="bg-[#0F0E0E0D] w-[52px] h-[52px] rounded-full"></div>
+              <div>
+                <h6 class="text-xl font-extrabold text-[#0F0E0E]">
+                  Nasir Uddin
+                </h6>
+                <p class="text-[#0F0E0EB2] leading-[26px] font-medium">
+                  01/01/2025
+                </p>
+              </div>
+            </div>
+            <p class="text-[#0F0E0EB2] leading-[26px] font-medium mt-4">
+              Treat yourself to delicious cuisines with exclusive offers.
+            </p>
+            <div class="flex space-x-4 mt-4 absolute bottom-4">
+              <div class="flex spx-2 text-[#FFC107]">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <h5 class="text-xl font-bold text-[#0F0E0EE5] leading-[26px]">
+                (4.8)
+              </h5>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-white py-[100px]">
+      <div class="flex items-center justify-center">
+        <h3 class="text-[32px] font-bold text-[#0F0E0E] font-[inter]">
+          <span class="text-[#FC6320]">e</span>Com
+        </h3>
+        <img src="./assets/logo.png" alt="" class="w-9 h-9" />
+      </div>
+      <p
+        class="text-center text-lg font-medium font-[urbanist] text-[#0F0E0EB2] leading-[30px] mt-4 w-full md:w-[636px] mx-auto"
+      >
+        Save big this Black Friday with unbeatable deals on tech, home
+        essentials, fashion, and more! Limited stock.
+      </p>
+      <div class="w-full md:w-[1122px] mx-auto my-8">
+        <hr />
+      </div>
+      <ul
+        class="flex items-center justify-center space-x-6 md:space-x-12 font-[inter]"
+      >
+        <li class="text-[#0F0E0E] font-extrabold">Home</li>
+        <li class="font-medium text-[#0F0E0E99]">Shop</li>
+        <li class="font-medium text-[#0F0E0E99]">App Products</li>
+        <li class="font-medium text-[#0F0E0E99]">Contact</li>
+      </ul>
+      <div class="flex items-center justify-center space-x-6 mt-8">
+        <img src="./assets/fb.png" alt="" />
+        <img src="./assets/instagram.png" alt="" />
+        <img src="./assets/x.png" alt="" />
+      </div>
+    </footer>
+  </body>
+</html>
